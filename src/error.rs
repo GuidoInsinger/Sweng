@@ -13,6 +13,9 @@ pub enum SimulationError {
     #[error("Nalgebra error: {0}")]
     NalgebraError(String),
     /// Error related to the OSQP solver
+    #[error("IO error: {0}")]
+    Io(#[from] std::io::Error),
+    /// std::io::Error
     /// Other general errors
     #[error("Other error: {0}")]
     OtherError(String),

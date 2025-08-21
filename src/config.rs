@@ -16,6 +16,8 @@ pub struct SimulationConfig {
     pub simulation_frequency: usize,
     /// Total duration of the simulation (seconds)
     pub duration: f32,
+    /// Number of drones 
+    pub n_drones: u32,
 }
 
 #[derive(serde::Deserialize)]
