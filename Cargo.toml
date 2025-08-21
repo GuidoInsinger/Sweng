@@ -1,0 +1,11 @@
+[package]
+name = "Sweng"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+nalgebra = "0.34.0"
+rerun = "0.24.1"
+serde = "1.0.219"
+serde_yaml = "0.9.34"
+thiserror = "2.0.16"
